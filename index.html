@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Financialyst</title>
+<meta name="description" content="Financialyst is an iPhone app for tracking spending, budgets, goals, debts and investments, with everything saved to a Google Sheet in your own Google Drive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="./">Financialyst</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms of Use</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Your money, kept in your own Google Sheet.</h1>
+        <p>Financialyst is an iPhone app for tracking spending, budgets, savings goals, debts and investments, for yourself or your household.</p>
+        <p>Everything you enter is saved to a Google Sheet called Financialyst in your own Google Drive. You can open it, edit it and download it at any time.</p>
+        <p class="status"><strong>Financialyst is in testing</strong> and not yet on the App Store.</p>
+      </div>
+
+      <figure class="ledger" aria-label="Example: a card notification becomes a row in your Financialyst sheet">
+        <div class="alert">
+          <div class="from"><b>Your bank</b><span>now</span></div>
+          You spent $12.50 at Corner Café with your card ending 4417.
+        </div>
+        <div class="flow" aria-hidden="true"></div>
+        <div class="sheet">
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Description</th><th>Category</th><th class="amt">Amount</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>14 Nov</td><td>Grocer &amp; Co</td><td>Food › Groceries</td><td class="amt">-64.20</td></tr>
+              <tr class="new"><td>15 Nov</td><td>Corner Café</td><td>Food › Dining Out</td><td class="amt">-12.50</td></tr>
+              <tr class="blank"><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+          <div class="sheet-name">Financialyst · Ledger</div>
+        </div>
+      </figure>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="wrap split">
+      <h2>What it does</h2>
+      <ul class="features">
+        <li><b>Logs transactions from your money alerts</b><span>An iPhone Shortcut passes the bank, card and broker notifications you choose to the app, which turns each one into a row in your sheet.</span></li>
+        <li><b>Budgets, goals and debts</b><span>Plan monthly spending, track savings goals and pay down debts, with reminders before recurring payments are due.</span></li>
+        <li><b>Investments</b><span>Record buys, sells and dividends; prices come from Google Finance inside your own sheet.</span></li>
+        <li><b>Shared with your household</b><span>Invite family members to the same sheet, each with their own accounts and goals.</span></li>
+        <li><b>A financial-independence coach</b><span>Answer a few questions and get a plan toward financial independence for your household.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <h2>Why it signs in with Google</h2>
+      <div class="prose">
+        <p>When you sign in, Financialyst creates one Google Sheet in your Drive and keeps your records there. It asks only for Google's <code>drive.file</code> permission, which lets it open the files it creates or you choose. It can't see the rest of your Drive, your email or your contacts.</p>
+        <p>Your financial records aren't stored on our servers. The app also uses your Google name and email address to show who you're signed in as and to share the sheet with family members you invite.</p>
+        <p>You can remove the app's access at any time in your Google Account, under Security › Third-party apps with account access. The <a href="privacy/">Privacy Policy</a> covers everything the app handles, including what its AI features send and that they send nothing until you allow them.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Financialyst. Published by Fong Whye Hin, Singapore.</span>
+    <nav aria-label="Footer">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms of Use</a>
+      <a href="mailto:fwh0115@gmail.com">fwh0115@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
