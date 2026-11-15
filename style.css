@@ -31,14 +31,18 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-r
 
 /* Header */
 .site-head { padding: 28px 0; }
-.site-head .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .wordmark {
   font: 600 24px/1 var(--serif);
   font-variation-settings: "opsz" 48;
   letter-spacing: -0.01em;
   color: var(--green);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
+.wordmark img { width: 32px; height: 32px; border-radius: 8px; flex: none; }
 .site-nav { display: flex; gap: 22px; font-size: 15px; }
 .site-nav a { color: var(--muted); text-decoration: none; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; }
