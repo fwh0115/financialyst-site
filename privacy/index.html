@@ -26,7 +26,7 @@
 <main class="wrap">
   <article class="doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 15 November 2026</p>
+    <p class="updated">Last updated: 16 November 2026</p>
     <nav class="contents" aria-label="Contents">
       <p>Contents</p>
       <ul><li><a href="#in-short">In Short</a></li><li><a href="#1-information-the-app-handles-and-why">1. Information the App Handles, and Why</a></li><li><a href="#2-our-legal-bases">2. Our Legal Bases</a></li><li><a href="#3-how-long-information-is-kept">3. How Long Information Is Kept</a></li><li><a href="#4-your-choices-and-rights">4. Your Choices and Rights</a></li><li><a href="#5-google-api-services">5. Google API Services</a></li><li><a href="#6-security">6. Security</a></li><li><a href="#7-international-transfers">7. International Transfers</a></li><li><a href="#8-children">8. Children</a></li><li><a href="#9-changes-to-this-policy">9. Changes to This Policy</a></li><li><a href="#10-contact-us">10. Contact Us</a></li></ul>
@@ -36,7 +36,7 @@
     <ul>
     <li><strong>Your money data stays in your own Google Sheet</strong>, in your own Google Drive. We don't run servers that store your transactions, balances, budgets or goals, and we can't see them.</li>
     <li><strong>The App can only open the files it creates or you choose</strong>, not the rest of your Google Drive, email or contacts.</li>
-    <li><strong>Some features send limited data to an AI provider, only if you allow it:</strong> Auto-Log sends the text of a bank or card notification to be read, and the FI Coach sends summary figures, not your transactions.</li>
+    <li><strong>Some features send limited data to an AI provider, through our AI server, only if you allow it:</strong> Auto-Log sends the text of a bank or card notification to be read, and the FI Coach sends summary figures, not your transactions.</li>
     <li><strong>No ads, no tracking, no selling.</strong> We don't show ads, track you across other apps or websites, sell or share your personal data for advertising, or use analytics or advertising SDKs.</li>
     <li><strong>Anonymous usage counts are off unless you turn them on.</strong></li>
     <li><strong>You're in control.</strong> You can delete your Financialyst account in the App, and delete your sheet from your Drive at any time.</li>
@@ -59,7 +59,7 @@
     <h3 id="asking-before-ai">Asking before AI</h3>
     <p>Auto-Log and the FI Coach use AI only if you allow it. The App asks you during setup (or the first time it needs to, if you set up before it asked), shows exactly what is sent and to which provider, and sends nothing until you choose Allow. You can change your mind at any time in Reminders &amp; Coach › Privacy › Use AI Features.</p>
     <h3 id="auto-log-bank-card-and-broker-notifications">Auto-Log (bank, card and broker notifications)</h3>
-    <p>If you set up the Financialyst Shortcut, it passes the notifications you choose to the App. If you have allowed AI features, then to read a notification the App sends the following directly from your phone to our AI provider:</p>
+    <p>If you set up the Financialyst Shortcut, it passes the notifications you choose to the App. If you have allowed AI features, then to read a notification the App sends the following, through our AI server (see below), to our AI provider:</p>
     <ul>
     <li>the notification's text (for example a merchant, an amount, and the last digits of a card if the notification includes them);</li>
     <li>the name of the app it came from and when it arrived; and</li>
@@ -69,9 +69,17 @@
     <p>Your Shortcut may instead read an alert with Apple Intelligence (its "Use Model" step). That happens on your iPhone or in Apple's Private Cloud Compute, under Apple's privacy terms, and nothing is sent to us or our AI provider for that alert.</p>
     <p>Notifications that aren't transactions, like sign-in codes or promotions, are dropped without being stored. The full notification text isn't stored by us.</p>
     <h3 id="fi-coach">FI Coach</h3>
-    <p>If you have allowed AI features, when you ask the FI Coach a question or ask it to change a plan or goal, the App sends your question and the summary figures it needs (such as your total income, spending, savings, net worth, ages and goal targets) to our AI provider. It doesn't send your transactions, account names or other people's names. Your One Thing, forecasts, heads-ups, budget suggestions and nudges are worked out on your phone and aren't sent anywhere.</p>
+    <p>If you have allowed AI features, when you ask the FI Coach a question or ask it to change a plan or goal, the App sends your question and the summary figures it needs (such as your total income, spending, savings, net worth, ages and goal targets), through our AI server, to our AI provider. It doesn't send your transactions, account names or other people's names. Your One Thing, forecasts, heads-ups, budget suggestions and nudges are worked out on your phone and aren't sent anywhere.</p>
     <h3 id="our-ai-providers">Our AI providers</h3>
-    <p>Depending on how the App is set up, it uses Google (Gemini API) or Anthropic (Claude API). We use their paid API services, whose terms don't allow them to use the content we send to train their models. They may keep it for a limited time to detect abuse, as their terms describe. These providers may process data in the United States and other countries.</p>
+    <p>The App uses Google's Gemini and Anthropic's Claude, both run for us on Google Cloud's Vertex AI. We choose which model answers each feature, and if one is unavailable your request goes to another of them. We use Vertex AI's paid service, whose terms don't allow the content we send to be used to train AI models. It may be kept for a limited time to detect abuse, as those terms describe. These providers may process data in the United States and other countries.</p>
+    <h3 id="our-ai-server">Our AI server</h3>
+    <p>The App doesn't contain an AI key. It sends each Auto-Log or FI Coach request to our server on Google Cloud, together with your Google sign-in token, which proves the request comes from the App. Our server:</p>
+    <ul>
+    <li>checks the sign-in token, then passes the request to our AI provider and returns the answer;</li>
+    <li>adds one to a monthly count of your AI requests, so no one can use more than the App allows. The count is kept under a one-way code made from your Google account ID, not your name or email, and is deleted after about three months; and</li>
+    <li>doesn't store what you send or the answers. Like any web service, its logs keep technical details such as your IP address and the time of each request for up to 30 days, for security and troubleshooting.</li>
+    </ul>
+    <p>Requests from our server to the AI provider carry no information that identifies you.</p>
     <h3 id="purchases">Purchases</h3>
     <p>When you subscribe, Apple (or Google Play) handles the payment. We don't receive your payment card details. The App receives confirmation of which plan you bought and when it renews or ends, so it can turn on that plan's features, and writes that plan status to your family sheet.</p>
     <h3 id="investments">Investments</h3>
@@ -98,6 +106,7 @@
     <li>Your sheet stays in your Google Drive until you delete it.</li>
     <li>The App's copy on your phone stays until you delete your Financialyst account or the App.</li>
     <li>AI providers keep request data only as long as their API terms allow, typically up to about 30 days, for abuse monitoring.</li>
+    <li>Our AI server keeps each month's count of your AI requests for about three months, and its technical logs for up to 30 days.</li>
     <li>Anonymous totals are kept as long as they're useful to us. They can't be linked back to you.</li>
     <li>If you email us, we keep your messages for as long as needed to help you, and then up to two years.</li>
     </ul>

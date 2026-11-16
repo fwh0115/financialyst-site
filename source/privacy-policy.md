@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 15 November 2026
+Last updated: 16 November 2026
 
 This Privacy Policy explains how Financialyst ("the App") handles your information. Financialyst is published by Fong Whye Hin, an individual based in Singapore ("we", "us", "our"). We are responsible for your personal data as described here, and you can reach us at fwh0115@gmail.com.
 
@@ -8,7 +8,7 @@ This Privacy Policy explains how Financialyst ("the App") handles your informati
 
 - **Your money data stays in your own Google Sheet**, in your own Google Drive. We don't run servers that store your transactions, balances, budgets or goals, and we can't see them.
 - **The App can only open the files it creates or you choose**, not the rest of your Google Drive, email or contacts.
-- **Some features send limited data to an AI provider, only if you allow it:** Auto-Log sends the text of a bank or card notification to be read, and the FI Coach sends summary figures, not your transactions.
+- **Some features send limited data to an AI provider, through our AI server, only if you allow it:** Auto-Log sends the text of a bank or card notification to be read, and the FI Coach sends summary figures, not your transactions.
 - **No ads, no tracking, no selling.** We don't show ads, track you across other apps or websites, sell or share your personal data for advertising, or use analytics or advertising SDKs.
 - **Anonymous usage counts are off unless you turn them on.**
 - **You're in control.** You can delete your Financialyst account in the App, and delete your sheet from your Drive at any time.
@@ -44,7 +44,7 @@ Auto-Log and the FI Coach use AI only if you allow it. The App asks you during s
 
 ### Auto-Log (bank, card and broker notifications)
 
-If you set up the Financialyst Shortcut, it passes the notifications you choose to the App. If you have allowed AI features, then to read a notification the App sends the following directly from your phone to our AI provider:
+If you set up the Financialyst Shortcut, it passes the notifications you choose to the App. If you have allowed AI features, then to read a notification the App sends the following, through our AI server (see below), to our AI provider:
 
 - the notification's text (for example a merchant, an amount, and the last digits of a card if the notification includes them);
 - the name of the app it came from and when it arrived; and
@@ -58,11 +58,21 @@ Notifications that aren't transactions, like sign-in codes or promotions, are dr
 
 ### FI Coach
 
-If you have allowed AI features, when you ask the FI Coach a question or ask it to change a plan or goal, the App sends your question and the summary figures it needs (such as your total income, spending, savings, net worth, ages and goal targets) to our AI provider. It doesn't send your transactions, account names or other people's names. Your One Thing, forecasts, heads-ups, budget suggestions and nudges are worked out on your phone and aren't sent anywhere.
+If you have allowed AI features, when you ask the FI Coach a question or ask it to change a plan or goal, the App sends your question and the summary figures it needs (such as your total income, spending, savings, net worth, ages and goal targets), through our AI server, to our AI provider. It doesn't send your transactions, account names or other people's names. Your One Thing, forecasts, heads-ups, budget suggestions and nudges are worked out on your phone and aren't sent anywhere.
 
 ### Our AI providers
 
-Depending on how the App is set up, it uses Google (Gemini API) or Anthropic (Claude API). We use their paid API services, whose terms don't allow them to use the content we send to train their models. They may keep it for a limited time to detect abuse, as their terms describe. These providers may process data in the United States and other countries.
+The App uses Google's Gemini and Anthropic's Claude, both run for us on Google Cloud's Vertex AI. We choose which model answers each feature, and if one is unavailable your request goes to another of them. We use Vertex AI's paid service, whose terms don't allow the content we send to be used to train AI models. It may be kept for a limited time to detect abuse, as those terms describe. These providers may process data in the United States and other countries.
+
+### Our AI server
+
+The App doesn't contain an AI key. It sends each Auto-Log or FI Coach request to our server on Google Cloud, together with your Google sign-in token, which proves the request comes from the App. Our server:
+
+- checks the sign-in token, then passes the request to our AI provider and returns the answer;
+- adds one to a monthly count of your AI requests, so no one can use more than the App allows. The count is kept under a one-way code made from your Google account ID, not your name or email, and is deleted after about three months; and
+- doesn't store what you send or the answers. Like any web service, its logs keep technical details such as your IP address and the time of each request for up to 30 days, for security and troubleshooting.
+
+Requests from our server to the AI provider carry no information that identifies you.
 
 ### Purchases
 
@@ -105,6 +115,7 @@ Where laws such as the EU or UK GDPR apply, we rely on:
 - Your sheet stays in your Google Drive until you delete it.
 - The App's copy on your phone stays until you delete your Financialyst account or the App.
 - AI providers keep request data only as long as their API terms allow, typically up to about 30 days, for abuse monitoring.
+- Our AI server keeps each month's count of your AI requests for about three months, and its technical logs for up to 30 days.
 - Anonymous totals are kept as long as they're useful to us. They can't be linked back to you.
 - If you email us, we keep your messages for as long as needed to help you, and then up to two years.
 
