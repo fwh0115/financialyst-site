@@ -1,7 +1,7 @@
 # Marlow website
 
 The public home page, Privacy Policy and Terms of Use for the Marlow iPhone app (called Financialyst before 20 Nov 2026), served by GitHub Pages at
-https://fwh0115.github.io/marlow/ once this repository is renamed `marlow` (until then https://fwh0115.github.io/financialyst-site/) (`/privacy/` and `/terms/`). The app's code lives in a separate private repo;
+https://fwh0115.github.io/marlow/ (`/privacy/` and `/terms/`). The app's code lives in a separate private repo;
 nothing here gives access to it.
 
 The policies are written once, in the app repo (`ft_app/assets/legal/*.md`), and shown by both the app and this site.
