@@ -23,8 +23,8 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} · Financialyst</title>
-<meta name="description" content="The Financialyst {title}.">
+<title>{title} · Marlow</title>
+<meta name="description" content="The Marlow {title}.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@ TEMPLATE = """<!doctype html>
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="wordmark" href="../"><img src="../assets/icon-96.png" alt="" width="32" height="32">Financialyst</a>
+    <a class="wordmark" href="../"><img src="../assets/icon-96.png" alt="" width="32" height="32">Marlow</a>
     <nav class="site-nav" aria-label="Site">
       <a href="../privacy/"{privacy_current}>Privacy Policy</a>
       <a href="../terms/"{terms_current}>Terms of Use</a>
@@ -56,7 +56,7 @@ TEMPLATE = """<!doctype html>
 </main>
 <footer class="site-foot">
   <div class="wrap">
-    <span>© 2026 Financialyst. Published by Fong Whye Hin, Singapore.</span>
+    <span>© 2026 Marlow. Published by Fong Whye Hin, Singapore.</span>
     <nav aria-label="Footer">
       <a href="../privacy/">Privacy Policy</a>
       <a href="../terms/">Terms of Use</a>

@@ -1,23 +1,23 @@
 # Terms of Use
 
-Last updated: 15 November 2026
+Last updated: 16 November 2026
 
-These Terms of Use ("Terms") are an agreement between you and Fong Whye Hin, the individual who publishes Financialyst ("we", "us", "our"). They cover the Financialyst app for iPhone and, when released, Android, together with everything it does ("the App"). Please read them with our Privacy Policy, which explains what happens to your information.
+These Terms of Use ("Terms") are an agreement between you and Fong Whye Hin, the individual who publishes Marlow ("we", "us", "our"). They cover the Marlow app for iPhone and, when released, Android, together with everything it does ("the App"). Please read them with our Privacy Policy, which explains what happens to your information.
 
 By downloading or using the App you agree to these Terms. If you don't agree, please don't use the App.
 
-## 1. Who Can Use Financialyst
+## 1. Who Can Use Marlow
 
 - You must be at least 18 years old, or the age of majority where you live if that is higher.
 - You need a Google account to keep your data in Google Sheets. You may also sign in with Apple where the App offers it.
 - You must use the App only for your own personal, non-commercial money tracking, and for your family's if you invite them.
 
-## 2. What Financialyst Is, and What It Isn't
+## 2. What Marlow Is, and What It Isn't
 
-Financialyst helps you track spending, budgets, savings goals, debts and investments, and offers forecasts and a financial-independence ("FI") coach.
+Marlow helps you track spending, budgets, savings goals, debts and investments, and offers forecasts and a financial-independence ("FI") coach.
 
-- **Not financial advice.** Everything the App shows, including budgets, forecasts, projections, FI ages, coach suggestions and anything the AI FI Coach says, is general information to help you think about your money. It isn't financial, investment, tax, legal or other professional advice, and it isn't a recommendation to buy or sell anything. Please speak to a qualified professional before making financial decisions.
-- **AI can be wrong.** Auto-Log and the FI Coach use artificial intelligence. They can misread an alert, pick the wrong category, or give an answer that is incomplete or wrong. Please check what is logged and don't rely on AI answers alone.
+- **Not financial advice.** Everything the App shows, including budgets, forecasts, projections, FI ages, Marlow's suggestions and anything Marlow (the AI coach) says, is general information to help you think about your money. It isn't financial, investment, tax, legal or other professional advice, and it isn't a recommendation to buy or sell anything. Please speak to a qualified professional before making financial decisions.
+- **AI can be wrong.** Auto-Log and Marlow, the App's AI coach, use artificial intelligence. They can misread an alert, pick the wrong category, or give an answer that is incomplete or wrong. Please check what is logged and don't rely on AI answers alone.
 - **Estimates, not guarantees.** Prices, exchange rates, forecasts and projections are estimates. They may be delayed or wrong, and the future will differ from them.
 - **Not a bank.** We never hold, move or have access to your money, and we don't connect to your bank accounts. The App only records what you, or your phone's notifications, tell it.
 
@@ -35,13 +35,13 @@ Auto-Log works through an Apple Shortcut that you install and set up yourself, c
 
 ## 5. Plans, Subscriptions and Payments
 
-- **Free and paid plans.** Financialyst has a Free Plan and paid plans (currently the Plus Plan and the Family Plan). The App's plans screen shows what each includes and its price before you pay.
+- **Free and paid plans.** Marlow has a Free Plan and paid plans (currently the Plus Plan and the Family Plan). The App's plans screen shows what each includes and its price before you pay.
 - **Who a plan covers.** The Plus Plan covers you and one other person in your family sheet; the Family Plan covers up to the number of people shown in the App. They get its features through the shared sheet for as long as your subscription is active.
-- **Monthly limits.** Some features have monthly allowances (for example, Auto-Log alerts and FI Coach questions). Allowances are shared by everyone on a plan, reset on the 1st of each month, and are shown in the App. We may change allowances, and will tell you in the App before a change that reduces them takes effect.
+- **Monthly limits.** Some features have monthly allowances (for example, Auto-Log alerts and questions to Marlow). Allowances are shared by everyone on a plan, reset on the 1st of each month, and are shown in the App. We may change allowances, and will tell you in the App before a change that reduces them takes effect.
 - **Billing.** Subscriptions are sold through the Apple App Store (and, when available, Google Play) and are charged to your store account when you confirm the purchase.
 - **Automatic renewal.** A subscription renews automatically for the same period (monthly or yearly) at the then-current price unless you turn off auto-renew at least 24 hours before the end of the current period. Your store account is charged for renewal within the 24 hours before the current period ends.
 - **Free trials.** Where a free trial is offered, its length is shown before you subscribe. Unless you cancel at least 24 hours before the trial ends, the subscription starts and you are charged. Any unused part of a free trial is forfeited when you buy a subscription. Free trials are limited to one per Apple ID (or Google account).
-- **Managing and cancelling.** You can manage or cancel your subscription in your App Store account settings (on iPhone: Settings › your name › Subscriptions), or in Google Play › Payments & subscriptions. Deleting the App or your Financialyst account doesn't cancel a subscription.
+- **Managing and cancelling.** You can manage or cancel your subscription in your App Store account settings (on iPhone: Settings › your name › Subscriptions), or in Google Play › Payments & subscriptions. Deleting the App or your Marlow account doesn't cancel a subscription.
 - **Price changes.** If the price changes, the store will tell you in advance and, where the law or store rules require, ask for your agreement.
 - **Refunds.** Payments are handled by Apple or Google, and refunds follow their policies. For App Store purchases, request a refund at reportaproblem.apple.com. Nothing in these Terms takes away any refund rights you have under the law.
 
@@ -68,7 +68,7 @@ The App relies on services we don't control, including Google (sign-in, Drive, S
 
 - We may update the App and add, change or remove features. We'll try to give notice in the App before removing a feature you pay for.
 - We may update these Terms. If a change is significant, we'll tell you in the App before it takes effect. Continuing to use the App after that means you accept the new Terms.
-- You can stop using the App at any time, and delete your Financialyst account in Settings › Delete Account. Your Google Sheet stays in your Google Drive unless you delete it there.
+- You can stop using the App at any time, and delete your Marlow account in Settings › Delete Account. Your Google Sheet stays in your Google Drive unless you delete it there.
 - We may suspend or end your access if you seriously or repeatedly break these Terms, or if the law requires it. Where appropriate, we'll tell you why.
 
 ## 10. Disclaimers
