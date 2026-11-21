@@ -1,4 +1,4 @@
-"""Build privacy/index.html and terms/index.html from the app's Markdown.
+"""Build marlow/privacy/index.html and marlow/terms/index.html from the app's Markdown.
 
 The app repo's ft_app/assets/legal/*.md is the one source of truth. To update the site:
   1. copy privacy-policy.md and terms-of-use.md from the app repo into source/
@@ -12,6 +12,7 @@ from pathlib import Path
 import markdown  # pip install markdown
 
 ROOT = Path(__file__).parent
+SITE = ROOT / "marlow"  # served at https://fwh0115.github.io/marlow/
 PAGES = [
     ("privacy-policy.md", "privacy", "Privacy Policy"),
     ("terms-of-use.md", "terms", "Terms of Use"),
@@ -106,7 +107,7 @@ def build(src: str, folder: str, title: str) -> None:
         privacy_current=' aria-current="page"' if folder == "privacy" else "",
         terms_current=' aria-current="page"' if folder == "terms" else "",
     )
-    out = ROOT / folder / "index.html"
+    out = SITE / folder / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(page, encoding="utf-8")
     print(f"{out.relative_to(ROOT)}: {len(toc)} sections, {updated}")
